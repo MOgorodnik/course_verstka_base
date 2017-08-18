@@ -1,0 +1,149 @@
+// VARIABLES
+@orange: #e8603c;
+@grey: #b9b9b9;
+
+//FONTS
+@font-face {
+	font-family: 'BebasNeue Regular';
+	src: url('../fonts/bebasneue_regular.eot');
+	src: url('../fonts/bebasneue_regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/bebasneue_regular.woff2') format('woff2'),
+		 url('../fonts/bebasneue_regular.woff') format('woff'),
+		 url('../fonts/bebasneue_regular.ttf') format('truetype'),
+		 url('../fonts/bebasneue_regular.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: 'Helvetica Neue Custom';
+	src: url('../fonts/helveticaneuecyr-medium.eot');
+	src: url('../fonts/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/helveticaneuecyr-medium.woff2') format('woff2'),
+		 url('../fonts/helveticaneuecyr-medium.woff') format('woff'),
+		 url('../fonts/helveticaneuecyr-medium.ttf') format('truetype'),
+		 url('../fonts/helveticaneuecyr-medium.svg#svgFontName') format('svg');
+}
+
+//COMMON STYLES
+body {
+	font-family: 'BebasNeue Regular', Arial, sans-serif;
+}
+
+p {
+	font-family: 'Helvetica Neue Custom', 'Helvetica Neue', 'HelveticaNeue', Helvetica, 'Open Sans Condensed', Arial, sans-serif;
+}
+
+a {
+	color: @orange;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: @orange!important;
+}
+
+* {
+	outline: none!important;
+}
+
+// NAVBAR MAIN
+nav.navbar {
+	border: 0;
+	background: transparent;
+	margin: 0;
+	height: 70px;
+
+	// LOGO
+	h1 {
+		float: left;
+		margin: 0;
+	}
+
+	a.navbar-brand {
+		color: @orange;
+		font-size: 45px;
+		margin-top: 11px;
+		font-family: 'BebasNeue Regular';
+		font-weight: 600;
+		letter-spacing: 2px;
+
+		span {
+			color: lighten(@orange, 25%);
+		}
+	}
+
+	a.navbar-brand:hover {
+		color: @orange;
+	}
+
+	// MENU
+	ul.navbar-nav {
+		li a {
+			line-height: 45px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			font-size: 20px;
+			color: @grey;
+			padding-left: 9px;
+		}
+
+		li.active {
+			a, a:hover {
+				color: @orange;
+				background: transparent;
+			}
+		}
+
+		li:last-child a {
+			padding-right: 0;
+		}
+	}
+}
+
+// SLIDER
+section#slider {
+	position: relative;
+
+	#background-strip {
+		background: lighten(@orange, 25%);
+		height: 60px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+	}
+
+	.container {
+		background: #fff;
+		position: relative;
+		z-index: 10;
+	}
+
+	.carousel-indicators {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0;
+		position: static;
+		margin-top: 17px;
+		height: auto!important;
+
+		li {
+			border: 0;
+			width: 15%;
+			margin: 0;
+			height: auto;
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		li.active {
+			border: 2px solid @orange;
+			border-radius: 0;
+		}
+	}
+}

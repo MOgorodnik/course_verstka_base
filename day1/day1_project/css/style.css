@@ -1,0 +1,74 @@
+#main-nav {
+	margin-top: 20px;
+}
+
+#carousel-example-generic {
+	margin-bottom: 20px;
+}
+
+#carousel-example-generic img {
+	display: block;
+	margin: 0 auto!important;
+}
+
+.carousel-indicators {
+	bottom: -7px;
+}
+
+.carousel-control .glyphicon {
+	color: #000;
+	font-size: 60px;
+	width: auto;
+}
+
+.carousel-control .glyphicon-chevron-left {
+	left: 18px!important;
+}
+
+.carousel-control .glyphicon-chevron-right {
+	right: 18px!important;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background: transparent;
+}
+
+.well {
+	padding-top: 0;
+}
+
+.well p {
+	overflow: hidden;
+	height: 80px;
+	text-align: justify;
+}
+
+h2 {
+	margin-top: 15px;
+	height: 100px;
+}
+
+#articles img {
+	margin-bottom: 15px;
+	height: 200px;
+}
+
+small {
+	padding-left: 20px;
+	cursor: default;
+}
+
+ul.pagination {
+	width: 164px;
+}
+
+footer {
+	padding: 30px 20px;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+
+
